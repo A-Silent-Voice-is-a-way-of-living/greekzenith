@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovenir Shop</title>
+    <link rel="stylesheet" href="css/Sovenir.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+    <div class="topnav">
+        
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Sovenir-shop.html">Shop</a>
+        <a href="Game.html">Game</a>
+        <!--<img src="images/31.png" alt="31png" width="1%">-->
+      </div>
+
+    <div ng-app="" ng-init="quantity=0;quantity1=0;quantity2=0;quantity3=0">
+    <div class="Intro-Shop">
+        Welcome Shoppers!!
+    </div>
+
+    
+    <div class="Products">
+        <span class="Immediate-Intro"> With a Wide Range of Four Products:</span>
+        <div class="form-container" >
+            <form action="">
+                    <div class="form-left">
+                        <section class="product">
+                        <span class="Sword-head">Sparta Sword</span></section>
+                        <img src="images/26.jfif" alt="Sword">
+                        <section class="Price">
+                            Price:$7000
+                        </section>
+                        <label for="sword">Quantity:</label>
+                        
+                        
+                        <input type="number" name="sword" id="sword"  ng-model="quantity">
+
+                    </div>
+                <input type="button" value="Add to Cart" id="cta-btn" ng-model="bill" ng-click="count = count+1" ng-init="count=0">
+
+            </form></div>
+            
+            <div class="form-container1">
+            <form action="">
+                <div class="form-left1">
+                    <section class="product1">
+                    <span class="helmet">Sparta Helmet</span></section>
+                    <img src="images/27.jfif" alt="Sword">
+                    <section class="Price1">
+                        Price:$7000
+                    </section>
+                    <label for="helmet">Quantity:</label>
+                    
+                    
+                    <input type="number" name="shelmet" id="helmet"  ng-model="quantity1">
+
+                </div>
+            <input type="button" value="Add to Cart" id="cta-btn1" ng-model="bill1" ng-click="count = count+1" ng-init="count=0">
+
+            </div>
+            </form>
+
+            <div class="form-container2">
+                <form action="">
+                    <div class="form-left2">
+                        <section class="product2">
+                        <span class="Coin">Athena Old Coin</span></section>
+                        <img src="images/28.jfif" alt="Coin">
+                        <section class="Price2">
+                            Price:$7000
+                        </section>
+                        <label for="Coin">Quantity:</label>
+                        
+                        
+                        <input type="number" name="Coin" id="Coin"  ng-model="quantity2">
+    
+                    </div>
+                <input type="button" value="Add to Cart" id="cta-btn2" ng-model="bill2" ng-click="count = count+1" ng-init="count=0">
+    
+                </div>
+                </form>
+                <div class="form-container3">
+                    <form action="">
+                        <div class="form-left3">
+                            <section class="product3">
+                            <span class="Statue">Athena Statue</span></section>
+                            <img src="images/29.jfif" alt="Coin">
+                            <section class="Price3">
+                                Price:$7000
+                            </section>
+                            <label for="Statue">Quantity:</label>
+                            
+                            
+                            <input type="number" name="Statue" id="Statue"  ng-model="quantity3">
+        
+                        </div>
+                    <input type="button" value="Add to Cart" id="cta-btn3" ng-model="bill3" ng-click="count = count+1" ng-init="count=0">
+        
+                    </div>
+                    </form>                
+
+        </div>       
+
+        <div ng-show="count" class="count">
+            <span class="Intro-bill"> <p>Reciept:</p></span> 
+            <div class="Table">
+                <table>
+                    <tr>
+                        <th>Products</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>Sparta Sword </td>
+                        <td>7000$</td>
+                        <td>{{quantity}}</td>
+                        <td>{{quantity*7000}}$</td>
+                    </tr>
+                    <tr>
+                        <td>Helmet </td>
+                        <td>10000$</td>
+                        <td>{{quantity1}}</td>
+                        <td>{{quantity1*10000}}$</td>
+                    </tr>
+                    <tr>
+                        <td>Coin </td>
+                        <td>200$</td>
+                        <td>{{quantity2}}</td>
+                        <td>{{quantity2*200}}$</td>
+                    </tr>
+                    <tr>
+                        <td>Statue </td>
+                        <td>3000$</td>
+                        <td>{{quantity3}}</td>
+                        <td>{{quantity3*3000}}$</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td></td>
+                        <td></td>
+                        <td><u> {{quantity3*3000+quantity*7000+quantity1*10000+quantity2*200}} $ </u> </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+                
+    </div>
+</div>
+</body>
+</html>
