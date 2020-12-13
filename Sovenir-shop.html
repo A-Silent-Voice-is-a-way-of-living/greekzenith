@@ -17,7 +17,7 @@
         <a href="about.html">About</a>
         <a href="Sovenir-shop.html">Shop</a>
         <a href="Game.html">Game</a>
-         <img src="images/39.png" alt="39png" width="35px">
+         <img src="images/39.png"  alt="39png" width="35px">
       </div>
 
     <div ng-app="" ng-init="quantity=0;quantity1=0;quantity2=0;quantity3=0">
@@ -43,7 +43,7 @@
                         <input type="number" name="sword" id="sword"  ng-model="quantity">
 
                     </div>
-                <input type="button" value="Add to Cart" id="cta-btn" ng-model="bill" ng-click="count = count+1" ng-init="count=0">
+                <input type="button" value="Add to Cart" id="cta-btn" ng-model="bill" ng-click="quantity = quantity+1" ng-init="count=0">
 
             </form></div>
             
@@ -62,7 +62,7 @@
                     <input type="number" name="shelmet" id="helmet"  ng-model="quantity1">
 
                 </div>
-            <input type="button" value="Add to Cart" id="cta-btn1" ng-model="bill1" ng-click="count = count+1" ng-init="count=0">
+            <input type="button" value="Add to Cart" id="cta-btn1" ng-model="bill1" ng-click="quantity1 = quantity1+1" ng-init="count=0">
 
             </div>
             </form>
@@ -82,7 +82,7 @@
                         <input type="number" name="Coin" id="Coin"  ng-model="quantity2">
     
                     </div>
-                <input type="button" value="Add to Cart" id="cta-btn2" ng-model="bill2" ng-click="count = count+1" ng-init="count=0">
+                <input type="button" value="Add to Cart" id="cta-btn2" ng-model="bill2" ng-click="quantity2 = quantity2+1" ng-init="count=0">
     
                 </div>
                 </form>
@@ -101,7 +101,7 @@
                             <input type="number" name="Statue" id="Statue"  ng-model="quantity3">
         
                         </div>
-                    <input type="button" value="Add to Cart" id="cta-btn3" ng-model="bill3" ng-click="count = count+1" ng-init="count=0">
+                    <input type="button" value="Add to Cart" id="cta-btn3" ng-model="bill3" ng-click="quantity3 = quantity3+1" ng-init="count=0">
         
                     </div>
                     </form>                
