@@ -32,11 +32,13 @@
             function jump(){
                 if(character.classList == "animate"){return;}
                 character.classList.add("animate");
-                setTimeout(removeJump,300); 
+                setTimeout(removeJump,300);
+
             };
             function removeJump(){
                 character.classList.remove("animate");
             }
+
             
             var block = document.getElementById("block");
             function checkDead(){
@@ -44,8 +46,12 @@
                 let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
                 if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
                     window.location.reload();
+                    alert("Game Over!Your Score=Not Enough To Win");
+
+
                 }
             }
+
             
             setInterval(checkDead, 10);
         </script>
