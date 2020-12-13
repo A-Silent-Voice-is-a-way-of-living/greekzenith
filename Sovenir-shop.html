@@ -16,7 +16,7 @@
         <a href="about.html">About</a>
         <a href="Sovenir-shop.html">Shop</a>
         <a href="Game.html">Game</a>
-        <!--<img src="images/31.png" alt="31png" width="1%">-->
+         <img src="images/31.png" alt="31png" width="50px">
       </div>
 
     <div ng-app="" ng-init="quantity=0;quantity1=0;quantity2=0;quantity3=0">
@@ -25,9 +25,9 @@
     </div>
 
     
-    <div class="Products">
-        <span class="Immediate-Intro"> With a Wide Range of Four Products:</span>
-        <div class="form-container" >
+    <div class="Products" >
+        <span class="Immediate-Intro"> With a Wide Range of Four Products:<br>Scroll Down to Generate a Reciept</span>
+        <div class="form-container">
             <form action="">
                     <div class="form-left">
                         <section class="product">
@@ -53,7 +53,7 @@
                     <span class="helmet">Sparta Helmet</span></section>
                     <img src="images/27.jfif" alt="Sword">
                     <section class="Price1">
-                        Price:$7000
+                        Price:$10,000
                     </section>
                     <label for="helmet">Quantity:</label>
                     
@@ -73,7 +73,7 @@
                         <span class="Coin">Athena Old Coin</span></section>
                         <img src="images/28.jfif" alt="Coin">
                         <section class="Price2">
-                            Price:$7000
+                            Price:$200
                         </section>
                         <label for="Coin">Quantity:</label>
                         
@@ -92,7 +92,7 @@
                             <span class="Statue">Athena Statue</span></section>
                             <img src="images/29.jfif" alt="Coin">
                             <section class="Price3">
-                                Price:$7000
+                                Price:$3000
                             </section>
                             <label for="Statue">Quantity:</label>
                             
@@ -107,10 +107,13 @@
 
         </div>       
 
-        <div ng-show="count" class="count">
+        <input type="button" value="Generate-Recipt" id="cta-btn4" ng-model="bill4" ng-click="count1 = count1+1" ng-init="count1=0" class="Generate-Rec">
+        <div ng-show="count1" class="count">
+           
             <span class="Intro-bill"> <p>Reciept:</p></span> 
+
             <div class="Table">
-                <table>
+                <table class="zable">
                     <tr>
                         <th>Products</th>
                         <th>Price</th>

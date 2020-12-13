@@ -3,24 +3,19 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-
-    
-    background:white  ;
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    margin: 0;
+    margin:0;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: white;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -73,6 +68,7 @@ body {
     box-shadow:10px 10px 10px rgb(0,0,0,0.5);
     box-sizing: content-box;
     z-index: -1;
+
 }
 .form-container img{
     z-index: -1;
@@ -307,12 +303,23 @@ input[type=button]:hover {
     position:relative ;
     z-index: 1;
 }
-table{
+.zable{
+    padding-top: 14rem;
+    padding-bottom: 10rem;
     margin-bottom: 3rem;
+    background: url(../images/30.jpg);
+    background-size: 500px 600px;
+    
 }
 table tr,th{
-    width: 10%;
+    
+    width: 20%;
     margin-bottom: 5rem;
     text-align: center;
-    border-bottom: 1px solid black;
+    
+}
+input[type=button].Generate-Rec {
+    width: 50%;
+    margin-left: 23%;
+    margin-bottom: 2rem;
 }

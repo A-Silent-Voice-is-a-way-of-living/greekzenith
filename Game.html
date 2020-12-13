@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Sparta Jump Game</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
 <body>
-    <div class="Game"></div>
-    
+    <div class="topnav">
+        
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Sovenir-shop.html">Shop</a>
+        <a href="Game.html">Game</a>
+         <img src="images/31.png" alt="31png" width="50px">
+      </div>
+    <div class="description">
+        <p> The Persians are not backing out. Its time for the Spartan Leader to take down their stronghold. <br> The Spartan Leader has attacked but before reaching there.He must dodge the arrows from persians.<br>Do you have What it takes to reach their Stronghold without getting hit by the arrows??<br> Help out your Spartan Leader and End Persian Domination.</p>
+    </div>
+    <div ng-app="" ng-init="">
+        <input type="button" value="Start Game" id="cta-btn" ng-model="bill" ng-click="count = count+1" ng-init="count=0">
+        <div ng-show="count" class="count">
+            <div id="game">
+            <div id="character"></div>
+            <div id="block"></div>
+        
+            </div>
+        <script src="game.js"></script>
+        </div>
+    </div>
 </body>
 </html>
