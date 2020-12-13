@@ -179,7 +179,8 @@ section.Arch {
     margin-top: 1rem;
 }
 .Arch img{
-    width: 100%;
+    margin-left: 20%;
+    width: 564px;
     height: auto;
 
 }
