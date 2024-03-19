@@ -56,7 +56,11 @@ body {
 
     z-index: -1;
 }
-
+.Products{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
 .form-container{
     background-color: white;
     margin-top: 2rem;
